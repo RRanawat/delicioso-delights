@@ -24,8 +24,18 @@ function nextStep() {
 
 window.onload = function () {
     const localStorageOrderDetails = JSON.parse(localStorage.getItem("order-details"));
-    for(const number of [1,2,3,4,5,6]) {
+    for (const number of [1, 2, 3, 4, 5, 6]) {
         const elem = document.getElementById(`review-step-${number}`);
         elem.innerText = localStorageOrderDetails[`step-${number}`].replaceAll("-", " ");
     }
+}
+
+function placeOrder() {
+    if (!localStorage.getItem("order-details")) {
+        window.location = "/";
+        return;
+    }
+    localStorage.removeItem("order-details");
+    alert("Your order was placed!");
+    window.location = '/';
 }

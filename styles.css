@@ -47,6 +47,11 @@ body {
     flex: 1;
     margin-top: 2.5rem;
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .container .bake-cake-header {
@@ -245,7 +250,7 @@ textarea {
     gap: 1rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
     .container {
         max-width: 1400px;
         padding: 3rem;

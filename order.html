@@ -62,20 +62,13 @@
         <div class="step" id="step-5">
             <h2>Step 5: Add Custom Text</h2>
             <input type="text" id="custom-text" placeholder="Your message (e.g., Happy Birthday)">
-            <label for="font-style">Choose Font Style:</label>
-            <select id="font-style" class="dropdown">
-                <option value="" disabled selected>Select Style</option>
-                <option value="cursive">Cursive</option>
-                <option value="block">Block</option>
-                <option value="italic">Italic</option>
-            </select>
             <button class="navigation-button" onclick="nextStep()">Next</button>
         </div>
 
         <div class="step" id="step-6">
             <h2>Step 6: Delivery Address</h2>
             <textarea id="delivery-address" rows="3" placeholder="Enter your delivery address"></textarea>
-            <button class="review-order">Review Your Order</button>
+            <a class="review-order" onclick="nextStep()" href="review.html">Review Your Order</a>
         </div>
     </main>
 

@@ -62,11 +62,11 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     color: #555;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .order-button {
-    margin-top: 1.5rem;
     background-color: #F5C7C9;
     color: #333;
     font-size: 1rem;

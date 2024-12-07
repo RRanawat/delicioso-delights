@@ -25,7 +25,7 @@ function nextStep() {
 window.onload = function () {
     const localStorageOrderDetails = JSON.parse(localStorage.getItem("order-details"));
     console.log(window.location);
-    if (!(localStorageOrderDetails || window.location.pathname == "/order.html")) {
+    if (!(localStorageOrderDetails || (window.location.pathname == "/order.html" && window.location.pathname == "/order"))) {
         window.location = "/";
         return;
     }

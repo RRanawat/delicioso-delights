@@ -166,7 +166,12 @@ textarea {
 }
 
 .step {
+    display: none;
     margin-bottom: 2rem;
+}
+
+.step.active {
+    display: block;
 }
 
 .step h2 {
@@ -175,9 +180,8 @@ textarea {
     margin-bottom: 0.5rem;
 }
 
-.review-order {
+.review-order, .navigation-button {
     display: block;
-    width: 100%;
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
@@ -188,9 +192,10 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
-.review-order:hover {
+.review-order:hover, .navigation-button:hover {
     background-color: #d76b6d;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

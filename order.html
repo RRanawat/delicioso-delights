@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Delicioso Delights - Order</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <h1 class="cake-customize-header">Customize Your Cake</h1>
         <p class="order-tagline">Follow these simple steps to design your perfect cake.</p>
 
-        <section class="step">
+        <div class="step active" id="step-1">
             <h2>Step 1: Choose Your Cake Size</h2>
             <select class="dropdown" id="cake-size">
                 <option value="" disabled selected>Select Size</option>
@@ -25,9 +26,10 @@
                 <option value="8-inch">8-inch</option>
                 <option value="10-inch">10-inch</option>
             </select>
-        </section>
+            <button class="navigation-button" onclick="nextStep()">Next</button>
+        </div>
 
-        <section class="step">
+        <div class="step" id="step-2">
             <h2>Step 2: Choose Your Cake Flavor</h2>
             <select class="dropdown" id="cake-flavor">
                 <option value="" disabled selected>Select Flavor</option>
@@ -36,9 +38,10 @@
                 <option value="red-velvet">Red Velvet</option>
                 <option value="carrot-cake">Carrot Cake</option>
             </select>
-        </section>
+            <button class="navigation-button" onclick="nextStep()">Next</button>
+        </div>
 
-        <section class="step">
+        <div class="step" id="step-3">
             <h2>Step 3: Pick Your Frosting</h2>
             <select class="dropdown" id="frosting-type">
                 <option value="" disabled selected>Select Frosting</option>
@@ -46,15 +49,17 @@
                 <option value="cream-cheese">Cream Cheese</option>
                 <option value="fondant">Fondant</option>
             </select>
-        </section>
+            <button class="navigation-button" onclick="nextStep()">Next</button>
+        </div>
 
-        <section class="step">
+        <div class="step" id="step-4">
             <h2>Step 4: Add Decorations</h2>
             <textarea id="custom-decorations" rows="3"
                 placeholder="Describe your custom decorations (e.g., flowers, sprinkles, etc.)"></textarea>
-        </section>
+            <button class="navigation-button" onclick="nextStep()">Next</button>
+        </div>
 
-        <section class="step">
+        <div class="step" id="step-5">
             <h2>Step 5: Add Custom Text</h2>
             <input type="text" id="custom-text" placeholder="Your message (e.g., Happy Birthday)">
             <label for="font-style">Choose Font Style:</label>
@@ -64,14 +69,14 @@
                 <option value="block">Block</option>
                 <option value="italic">Italic</option>
             </select>
-        </section>
+            <button class="navigation-button" onclick="nextStep()">Next</button>
+        </div>
 
-        <section class="step">
+        <div class="step" id="step-6">
             <h2>Step 6: Delivery Address</h2>
             <textarea id="delivery-address" rows="3" placeholder="Enter your delivery address"></textarea>
-        </section>
-
-        <button class="review-order" id="review-order" >Review Your Order</button>
+            <button class="review-order">Review Your Order</button>
+        </div>
     </main>
 
     <footer>

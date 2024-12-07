@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F2EAE5;
+    background-color: #F5C7C9;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -49,7 +49,7 @@ body {
     align-self: flex-start;
 }
 
-.container h1 {
+.container .bake-cake-header {
     margin-top: 1.5rem;
     font-size: 7rem;
     font-weight: bold;
@@ -67,7 +67,7 @@ body {
 
 .order-button {
     margin-top: 1.5rem;
-    background-color: #F2EAE5;
+    background-color: #F5C7C9;
     color: #333;
     font-size: 1rem;
     font-weight: bold;
@@ -75,6 +75,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .order-button:hover {
@@ -96,7 +97,7 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: auto;
-    background-color: #F2EAE5;
+    background-color: #F5C7C9;
     font-size: 0.9rem;
 }
 
@@ -109,7 +110,7 @@ footer {
         margin-top: 20px;
     }
 
-    .container h1 {
+    .container .bake-cake-header {
         font-size: 4rem;
     }
 
@@ -121,4 +122,75 @@ footer {
     .image-section img {
         max-width: 300px;
     }
+
+    .step h2 {
+        font-size: 1.2rem;
+    }
+
+    .order-button {
+        font-size: 1rem;
+    }
+}
+
+.cake-customize-header {
+    font-size: 3rem;
+}
+
+.order-tagline {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.dropdown, textarea, input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 2px solid #f5c7c9;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown:focus, textarea:focus, input:focus {
+    border-color: #f48c8e;
+    box-shadow: 0 0 5px rgba(244, 140, 142, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.step {
+    margin-bottom: 2rem;
+}
+
+.step h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.review-order {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f48c8e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-order:hover {
+    background-color: #d76b6d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
